@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="animate.css" rel="stylesheet" type="text/css" />
+<link href="welcome.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Welcome to teltrack</h1>
+<p> We'll help you set up call tracking for your first campaign from start to finish. It'll be a breeze and will only take a minute.</p>
+<br><br>
+<p>Ready? Let's get started</p>
+<button>create campaign</button>
+</body>
+<script>
+function animate() {
+    $('h1').addClass('animated pulse');
+}
+
+function unanimate() {
+    setTimeout(function() {
+    	$('h1').removeClass();
+    }, 1000);
+}
+$('h1').hover(animate, unanimate);
+</script>
+</html>
