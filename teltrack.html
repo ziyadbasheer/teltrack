@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title>Dashboard | teltrack</title> 
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+	<link href="teltrack.css" rel='stylesheet' type='text/css'/>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+</head>
+<body>
+	<div id="container">
+	<nav>
+		<h1>Dashboard</h1>
+	</nav>
+	<div id="wrap">
+	<section id="graphs">
+		<section id="incoming-calls">
+			<h2 class="right">incoming calls</h2>
+			<p class="right">Total inbound calls per day</p>
+			<canvas id="incomingCalls" width="400" height="200"></canvas>	<script src="graphs.js"></script>
+		</section>
+		<section id="campaign-calls">
+			<h2  class="right">campaign calls</h2>
+			<p  class="right">Inbound call statistics for each campaign</p>
+			<canvas id="campaignCalls" width="400" height="200"></canvas><script src="graph1.js"></script>
+		</section>
+	</section>
+
+	<section id="logs">
+		<h2>call records</h2>
+		<p>Call records are updated in real-time</p>
+		<table>
+			<th>campaign</th>
+			<th>from</th>
+			<th>duration</th>
+			<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23<img class="play" src="play.svg" /></td>
+			</tr>
+			<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23<img class="play" src="play.svg" /></td>
+			</tr>
+						<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23<img class="play" src="play.svg" /></td>
+			</tr>
+						<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23<img class="play" src="play.svg" /></td>
+			</tr>
+						<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23<img class="play" src="play.svg" /></td>
+			</tr>
+						<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23 <img class="play" src="play.svg" /></td>
+			</tr>
+						<tr>
+				<td class="campaign-name">Facebook Ads</td>
+				<td class="caller-number">(555) 1234 567</td>
+				<td class="call-duration">00:00:23<img class="play" src="play.svg" /></td>
+			</tr>			
+	</section>
+</div>
+</div>
+</body>
+
+</html>
