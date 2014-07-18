@@ -2,6 +2,7 @@ nav {
 	border-bottom: 1px solid #ededed;
 	height: auto; 
 	font-family: 'Lato';
+	margin-left: 15px;
 }
 
 .right {
@@ -14,7 +15,9 @@ h1 {
 	font-weight: 300;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	margin-left:;
+	font-family: 'Lato';
+
+	
 }
 
 h2, p {
@@ -127,6 +130,28 @@ td {
 	height: 600px;
 }
 
-.popover {
-	text-align: center;
+#button-container {
+	  text-align: center;
+
+}
+
+.primary {
+    height: 50px;
+    width: 140px;
+    background-color: #24abd0;
+    border-radius: 2px;
+    border: 1px solid #1f92af;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lato';
+    font-size: 0.7em;
+    transition: background-color 0.3s;
+    	         display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.primary:hover {
+    background-color: #1f92af;
 }

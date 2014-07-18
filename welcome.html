@@ -2,14 +2,15 @@
 <head>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link href="animate.css" rel="stylesheet" type="text/css" />
+<link href="teltrack.css" rel="stylesheet" type="text/css" />
 <link href="welcome.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<h1 class="popover">Welcome to teltrack</h1>
-<p class="popover"> We'll help you set up call tracking for your first campaign from start to finish. It'll be a breeze and will only take a minute.</p>
+<h1>Welcome to teltrack</h1>
+<p> We'll help you set up call tracking for your first campaign from start to finish. It'll be a breeze and will only take a minute.</p>
 <br><br>
-<p class="popover">Ready? Let's get started</p>
-<button>create campaign</button>
+<p>Ready? Let's get started</p>
+<div id="button-container"><button class="primary">create campaign</button></div>
 </body>
 <script>
 function animate() {
@@ -21,6 +22,6 @@ function unanimate() {
     	$('h1').removeClass();
     }, 1000);
 }
-$('h1').hover(animate, unanimate);
+//$('h1').hover(animate, unanimate);
 </script>
 </html>
