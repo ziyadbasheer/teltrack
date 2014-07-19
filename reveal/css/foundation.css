@@ -30,7 +30,7 @@ meta.foundation-data-attribute-namespace {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  
+
 a:hover {
   cursor: pointer; }
 
@@ -157,6 +157,12 @@ dialog[open] {
     dialog.full, .reveal-modal.full {
       margin-left: -50vw;
       width: 100vw; } }
+  
+  /* media query for desktop and laptop modals */
+    @media only screen and (min-width : 1224px) and ((min-width : 1824px) {
+    dialog.small, .reveal-modal.medium {
+      margin-left: -20%;
+      width: 40%; } }
 
 @media print {
   dialog, .reveal-modal {
