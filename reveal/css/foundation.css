@@ -24,15 +24,15 @@ meta.foundation-mq-xxlarge {
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
-html, body {
-  height: 100%; }
-
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  
+a:hover {
+  cursor: pointer; }
 
 img {
   -ms-interpolation-mode: bicubic; }
@@ -139,13 +139,11 @@ dialog[open] {
   @media only screen and (min-width: 40.063em) and (min-width: 40.063em) {
     dialog.small, .reveal-modal.small {
       margin-left: -20%;
-      width: 40%; 
-      min-width: 480px;} }
+      width: 40%; } }
   @media only screen and (min-width: 40.063em) and (min-width: 40.063em) {
     dialog.medium, .reveal-modal.medium {
       margin-left: -30%;
-      width: 60%; 
-      min-width: 620px;} }
+      width: 60%; } }
   @media only screen and (min-width: 40.063em) and (min-width: 40.063em) {
     dialog.large, .reveal-modal.large {
       margin-left: -35%;
