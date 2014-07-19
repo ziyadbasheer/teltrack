@@ -162,7 +162,8 @@ dialog[open] {
   @media only screen and (min-width: 40.063em) and (min-width: 40.063em) {
     dialog.medium, .reveal-modal.medium {
       margin-left: -30%;
-      width: 60%; } }
+      width: 60%;
+      max-width: 760px; } }
   @media only screen and (min-width: 40.063em) and (min-width: 40.063em) {
     dialog.large, .reveal-modal.large {
       margin-left: -35%;
