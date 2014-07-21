@@ -22,20 +22,22 @@ display: inline-block;
 	
 }
 
-h2, p {
-	font-family: 'Lato';
-	color: #999999;
+.subtitle {
+	color: #C9C9C9;
 
 }
 
 h2 {
+	font-family: 'Lato';
+	color: #999999;
 	text-transform: uppercase;
 	font-size: 1.5em;
-	font-weight: 400;
+	font-weight: 300;
 	margin-bottom: 5px;
 }
 
 p {
+	color: #999999;
 	margin-top: 0px;
 	margin-bottom: 30px;
 	line-height: 1.5;
@@ -241,7 +243,7 @@ input:focus {
 	float: left;
 	font-family: 'Lato';
 	font-weight: normal;
-	color: #DDDDDD;
+	color: #C9C9C9;
 	font-size: 0.9em;
 	padding-left: 110px;
 	width: 45%;
@@ -315,7 +317,6 @@ input:focus {
 	line-height: 24px;
 	font-size: 12px;
 	color: #f3f3f3;
-	border: 1px solid #EEE;
 	-webkit-transition: 0.5s ease background;
 }
 
