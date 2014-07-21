@@ -23,6 +23,7 @@ display: inline-block;
 }
 
 .subtitle {
+	font-family: 'Lato';
 	color: #C9C9C9;
 
 }
@@ -81,7 +82,7 @@ th, td {
 
 th {
 	padding-right: 5em;
-	font-weight: normal;
+	font-weight: 300;
 }
 td {
 	padding-top: 1em;
