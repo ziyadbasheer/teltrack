@@ -352,17 +352,18 @@ h1.popover {
 	width: 8px;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
-	background: #f3f3f3;
+	background: #fff;
 	display: block;
 	margin: 0 auto;
 	line-height: 24px;
 	font-size: 12px;
-	color: #f3f3f3;
+	border: 1px solid #DFDFDF;
 	-webkit-transition: 0.5s ease background;
 }
 
 #active {
-	background: #C2C2C2;
+	background: #DFDFDF;
+		border: 1px solid #DFDFDF;
 }
 
 .track {
