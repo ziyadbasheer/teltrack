@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard | teltrack</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+    <link href="teltrack.css" rel='stylesheet' type='text/css' />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="reveal/css/foundation.css" rel='stylesheet' type='text/css' />
+    <!-- Latest compiled and minified CSS -->
+    <script>
+        function animate() {
+            $('a.primary').addClass('animated flash');
+        };
+
+        $(window).load(setTimeout(animate, 2000));
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <h1>Dashboard</h1>
+            <div id="nav-button-container" style="float: right;"><a href="#" class="primary" href="#" data-reveal-id="myModal" data-animation="fade">create campaign</a>
+            </div>
+        </nav>
+        <div id="wrap">
+            <table id="campaigns">
+                <tr>
+                    <td>    
+                        <div id="header">
+                            <input type="checkbox" class="checkbox">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <input type="checkbox" class="checkbox">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <h3 class="campaign-name">Facebook Ads</h3>
+                            <p class="campaign-description">Track incoming calls from Facebook Ads</p>
+                            <p class="campaign-date">Created April 15, 2014</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="campaign-column">
+                            86 Incoming Calls
+                        </div>
+                    </td>
+                    <td>
+                        <div class="campaign-column">
+                            02:34:56 Call Duration
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input type="button">Edit</button>
+                        </div>
+                    </td>
+                </tr>
+                </table>
+            </div>
+    </div>
+    <div id="myModal" class="reveal-modal small" data-reveal>
+        <h1 class="popover">Welcome to teltrack</h1>
+        <p class="popover">We'll help you set up call tracking for your first campaign from start to finish. It'll be a breeze and will only take a minute.</p>
+        <br>
+        <br>
+        <p class="popover">Ready? Let's get started</p>
+        <div id="button-container">
+            <button class="primary" href="#" data-reveal-id="myNumber">get started</button>
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="myNumber" class="reveal-modal medium" data-reveal>
+    	        <ul>
+			<li>	
+				<div id="active" class="circle">
+				</div>
+			</li>
+			<li>	
+				<a href="#" data-reveal-id="campaignToTrack">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+			<li>	
+				<a href="#" data-reveal-id="trackingNumbers">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+		</ul>
+        <h1 class="popover">What number do you want to receive customer calls on?</h1>
+        <input type="tel" placeholder="(555) 1234 567">
+
+        <a href="#" class="next" data-reveal-id="campaignToTrack">Campaign to track<img class ="next-img" src="next-icon.svg"></a>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="campaignToTrack" class="reveal-modal medium" data-reveal>
+    	<ul>
+			<li>	
+				<a href="#" data-reveal-id="myNumber">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+			<li>	
+				<div id="active" class="circle">
+				</div>
+			</li>
+			<li>	
+				<a href="#" data-reveal-id="trackingNumbers">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+		</ul>
+        <h1 class="popover">What advertising campaign are you tracking?</h1>
+        <input type="text" placeholder="E.g. Facebook Ads, Newspaper Ads, etc.">
+
+        <a href="#" class="back" data-reveal-id="myNumber">Your number<img class ="back-img" src="back-icon.svg"></a>
+        <a href="#" class="next" data-reveal-id="trackingNumbers">Tracking numbers<img class ="next-img" src="next-icon.svg"></a>
+
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="trackingNumbers" class="reveal-modal medium" data-reveal>
+    	<ul>
+			<li>	
+				<a href="#" data-reveal-id="myNumber">
+					<div class="circle">
+					</div>
+				</a>			
+			</li>
+			<li>	
+			<a href="#" data-reveal-id="campaignToTrack">
+				<div class="circle">
+				</div>
+			</a>
+			</li>
+			<li>	
+				<div id="active" class="circle">
+				</div>
+			</li>
+		</ul>
+        <h1 class="popover">What sort of tracking numbers would you like?</h1>
+        <input type="text" placeholder="E.g. Facebook Ads, Newspaper Ads, etc.">
+
+        <a href="#" class="back" data-reveal-id="campaignToTrack">Campaign to track<img class ="back-img" src="back-icon.svg"></a>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <script src="reveal/js/vendor/jquery.js"></script>
+    <script src="reveal/js/foundation/foundation.js"></script>
+    <script src="reveal/js/foundation/foundation.reveal.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+<script>
+    function animate() {
+        $('h1').addClass('animated pulse');
+    }
+
+    function unanimate() {
+            setTimeout(function () {
+                $('h1').removeClass();
+            }, 1000);
+        }
+        //$('h1').hover(animate, unanimate);
+</script>
+
+</html>
