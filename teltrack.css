@@ -85,6 +85,11 @@ th {
 	padding-right: 5em;
 	font-weight: 300;
 }
+
+.campaign-text {
+	padding-right: 3em;
+}
+
 td {
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -92,12 +97,9 @@ td {
 	padding-right: 5em;
 }
 
-#campaigns > tr >  td {
-
-	padding-top: 20px;
-	padding-bottom: 20px;
+.row >  td {
 	border-bottom: 1px solid #eee;
-	padding-right: 5em;
+	padding-right: 2em;
 
 }
 
@@ -183,6 +185,35 @@ a.primary {
 	text-decoration: none;
 	line-height: 4.5;
 	padding-left: 17px;
+}
+
+.secondary {
+    height: 30px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #24abd0;
+    text-transform: uppercase;
+    color: #24abd0;
+    font-weight: bold;
+    font-family: 'Lato';
+    font-size: 0.7em;
+    transition: border 0.3s, color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.secondary:hover {
+    border: 1px solid #1f92af;
+    text-transform: uppercase;
+    color: #1f92af;
+}
+
+a.secondary {
+	text-decoration: none;
+	line-height: 2.5;
+	padding-left: 20px;
 }
 
 .popover {
@@ -384,6 +415,7 @@ li {
 
 .campaign-name {
 	color: #24abd0;
+	font-size: 1.2em;
 	font-family: 'Lato';
 	margin: 0px;
 }
@@ -394,10 +426,20 @@ li {
 
 .campaign-date {
 	color: #DDDDDD;
+	margin-bottom: 0px;
+	font-size: 0.8em;
+	padding-top: 5px;
 }
 
 .campaign-column {
 	font-family: 'Lato';
-	font-size: 1.3em;
-	color: #24abd0;
+	font-size: 1.1em;
+	color: #52c2e1;
+	min-width: 230px;
+}
+
+em {
+	color: #DADADA;
+	font-style: normal;
+	font-weight: 300;
 }
