@@ -86,8 +86,10 @@ th {
 	font-weight: 300;
 }
 td {
+	padding-top: 1em;
+	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
-	padding-right: 1em;
+	padding-right: 5em;
 }
 
 #campaigns > tr >  td {
@@ -194,7 +196,7 @@ h1.popover {
 	font-size: 1.5em;
 }
 
-input {
+.field {
     font-family: "Lato";
 	font-size: 1.5em;
 	font-weight: 100;
@@ -212,7 +214,7 @@ input {
     margin-right: auto;
 }
 
-input:focus {
+.field:focus {
     border: 1px solid #E5F9FF;
     box-shadow:0 0 5px #E5F9FF;
 }
