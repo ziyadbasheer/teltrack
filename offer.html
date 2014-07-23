@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Campaigns | teltrack</title>
+    <link href='http://fonts.googleapis.com/css?family=Open Sans:300,400,700' rel='stylesheet' type='text/css' />
+    <link href="teltrack.css" rel='stylesheet' type='text/css' />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="reveal/css/foundation.css" rel='stylesheet' type='text/css' />
+    <!-- Latest compiled and minified CSS -->
+    <script>
+        function animate() {
+            $('a.primary').addClass('animated flash');
+        };
+
+        $(window).load(setTimeout(animate, 2000));
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <h1>Hi Robert!</h1>
+            <div id="nav-button-container" style="float: right;"><a href="#" class="primary" data-reveal-id="myModal" data-animation="fade">Trigger Modal</a>
+            </div>
+        </nav>
+    <div id="myModal" class="reveal-modal medium" data-reveal>
+        <p class="offer-info"><b>87 people</b> have redeemed this offer so far, <b>only 2 days left.</b></p>
+        <h1 class="offer-title">$99 Massage and Facial</h1>
+        <p class="offer-subtitle">Enjoy 2 hours of massages and facials, for just $99.</p>
+        <div id="stuff-container">
+            <div id="left-container">
+                <img width="200" src="massage.jpg">
+                <p class="subtext">Restrictions</p>
+            </div>
+            <div id="right-container">
+                <form>
+                    <p id="form-header">Enter your information &amp; we'll email you the offer!</p>
+                    <input class="form-field" type="name" placeholder="Please enter your fullname">
+                    <input class="form-field" type="email" placeholder="Please enter your email">
+                    <a href="#" class="primary" data-reveal-id="myModal" data-animation="fade">Claim offer</a>
+                </form>
+            </div>
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="myNumber" class="reveal-modal medium" data-reveal>
+    	        <ul>
+			<li>	
+				<div id="active" class="circle">
+				</div>
+			</li>
+			<li>	
+				<a href="#" data-reveal-id="campaignToTrack">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+			<li>	
+				<a href="#" data-reveal-id="trackingNumbers">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+		</ul>
+        <h1 class="popover">What number do you want to receive customer calls on?</h1>
+        <input class="field" type="tel" placeholder="(555) 1234 567">
+
+        <a href="#" class="next" data-reveal-id="campaignToTrack">Campaign to track<img class ="next-img" src="next-icon.svg"></a>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="campaignToTrack" class="reveal-modal medium" data-reveal>
+    	<ul>
+			<li>	
+				<a href="#" data-reveal-id="myNumber">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+			<li>	
+				<div id="active" class="circle">
+				</div>
+			</li>
+			<li>	
+				<a href="#" data-reveal-id="trackingNumbers">
+					<div class="circle">
+					</div>
+				</a>	
+			</li>
+		</ul>
+        <h1 class="popover">What advertising campaign are you tracking?</h1>
+        <input class="field" type="text" placeholder="E.g. Facebook Ads, Newspaper Ads, etc.">
+
+        <a href="#" class="back" data-reveal-id="myNumber">Your number<img class ="back-img" src="back-icon.svg"></a>
+        <a href="#" class="next" data-reveal-id="trackingNumbers">Tracking numbers<img class ="next-img" src="next-icon.svg"></a>
+
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="trackingNumbers" class="reveal-modal medium" data-reveal>
+    	<ul>
+			<li>	
+				<a href="#" data-reveal-id="myNumber">
+					<div class="circle">
+					</div>
+				</a>			
+			</li>
+			<li>	
+			<a href="#" data-reveal-id="campaignToTrack">
+				<div class="circle">
+				</div>
+			</a>
+			</li>
+			<li>	
+				<div id="active" class="circle">
+				</div>
+			</li>
+		</ul>
+        <h1 class="popover">What sort of tracking numbers would you like?</h1>
+        <input class="field" type="text" placeholder="E.g. Facebook Ads, Newspaper Ads, etc.">
+
+        <a href="#" class="back" data-reveal-id="campaignToTrack">Campaign to track<img class ="back-img" src="back-icon.svg"></a>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <script src="reveal/js/vendor/jquery.js"></script>
+    <script src="reveal/js/foundation/foundation.js"></script>
+    <script src="reveal/js/foundation/foundation.reveal.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+<script>
+    function animate() {
+        $('h1').addClass('animated pulse');
+    }
+
+    function unanimate() {
+            setTimeout(function () {
+                $('h1').removeClass();
+            }, 1000);
+        }
+        //$('h1').hover(animate, unanimate);
+</script>
+
+</html>
