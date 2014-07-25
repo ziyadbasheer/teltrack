@@ -174,8 +174,7 @@ td {
     transition: background-color 0.3s;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    margin-right: auto
 }
 
 .primary:hover {
@@ -185,7 +184,7 @@ td {
 a.primary {
 	text-decoration: none;
 	line-height: 4.5;
-	text-align: center;
+	padding-left: 17px;
 }
 
 .secondary {
@@ -444,78 +443,4 @@ em {
 	color: #DADADA;
 	font-style: normal;
 	font-weight: 300;
-}
-
-/* Hi Robert! Start here! */
-
-.offer-info {
-	font-family: 'Open Sans';
-	font-weight: 300;
-	color: #24abd0;
-	font-size: 0.8em;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 15px;
-	margin-bottom: 0px;
-}
-
-.offer-title {
-	font-family: 'Open Sans';
-	font-size: 2em;
-	font-weight: 400;
-	color: #fff;
-	background-color: #24abd0;
-	width: 100%;
-	text-align: center;
-	padding: 5px 0;
-	margin-top: 0;
-}
-
-.offer-subtitle {
-	font-family: 'Open Sans';
-	color: #999;
-	font-size: 1.2em;
-	text-align: center;
-}
-
-#stuff-container {
-	padding: 20px;
-	padding-top: 0px;
-}
-
-#left-container {
-	float: left;
-	width: 50%;
-}
-
-#right-container {
-	float: right;
-	width: 50%;
-}
-
-#form-header {
-	font-family: 'Open Sans';
-	text-align: center;
-	font-size: 0.8em;
-	margin-bottom: 5px;
-}
-
-.form-field {
-    font-family: 'Open Sans';
-	font-size: 1em;
-	height: 40px;
-	width: 300px;
-    border-radius: 2px;
-    border: 1px solid #e6e6e6;
-    color: #aaaaaa;
-    transition: border 0.5s;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-left: 15px;
-}
-
-.form-field:focus {
-    border: 1px solid #E5F9FF;
-    box-shadow:0 0 5px #E5F9FF;
 }
